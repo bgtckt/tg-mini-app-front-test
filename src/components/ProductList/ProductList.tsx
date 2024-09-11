@@ -39,6 +39,7 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
+        console.log(data);
         fetch('http://80.93.191.170:8000/web-data', {
             method: 'POST',
             headers: {
