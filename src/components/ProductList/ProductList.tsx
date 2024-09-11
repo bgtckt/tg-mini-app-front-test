@@ -54,7 +54,7 @@ const ProductList = () => {
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
-    }, [onSendData])
+    }, [onSendData, tg])
 
     const onAdd = (product: Product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
